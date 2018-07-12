@@ -85,9 +85,9 @@ router.post('/:projectId/stories/delete', (req: Request, res: Response) => {
 
     let index = project.stories.indexOf(story);
     project.stories.splice(index, 1);
-
+    console.log(project.stories);
     res.json(project.stories);
-})
+});
 
 
 
